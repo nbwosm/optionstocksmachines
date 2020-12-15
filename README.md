@@ -1,2 +1,2 @@
 # optionstocksmachines
-Code behind the blog
+This repository contains the code that drives the blog www.optionstocksmachines.com. The blog was created using blogdown and the Mainroad theme from Hugo. Initially, all the code was written, predictably, in R. However, starting in May 2020, we started providing the same analysis and output in Python. After December 2020, the blog will likely switch, haphazardly, between R and Python.  
