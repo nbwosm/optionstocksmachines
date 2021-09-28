@@ -2,6 +2,11 @@
 
 ## Create function
 sudoku_test <- function(mat_1){
+  ## Current function assumes use inputs a standard 9x9 sudoku.
+  ## With a few alterations it would be possible to generalize to any
+  ## n x n sudoku where n = m^2
+  
+  ## Create correct sequence
   seq_1 <- seq(1:nrow(mat_1))
   
   ## Test rows
@@ -33,7 +38,7 @@ sudoku_test <- function(mat_1){
   
   stopifnot(count_c == ncol(mat_1))
   
-  ## Test n x n matrices
+  ## Test 3 x 3 matrices
   start <- seq(1,9,sqrt(9))
   end <- start + sqrt(9) - 1
   
