@@ -88,7 +88,8 @@ sudo_mat
 ## Generate unsolved sudoku
 set.seed(42)
 mat_a <- matrix(sample(9,81,replace = TRUE), byrow=TRUE, nrow=9)
-# Output
+mat_a
+
 # [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9]
 # [1,]    1    5    1    9    4    2    1    8    7
 # [2,]    4    9    5    4    2    3    9    9    4
@@ -100,7 +101,8 @@ mat_a <- matrix(sample(9,81,replace = TRUE), byrow=TRUE, nrow=9)
 # [8,]    5    8    5    6    2    2    8    1    2
 # [9,]    5    8    7    8    5    4    9    4    7
 
-## Alter solved sudoku
+## Alter solved sudoku 
+# First error does not appear until after row 4
 set.seed(42)
 row_samp <- sample(4:9, 3, replace = TRUE)
 col_samp <- sample(9, 3, replace = TRUE)
@@ -113,7 +115,7 @@ for(i in 1:3){
   }
 }
 mat_b
-# Output
+
 # V1 V2 V3 V4 V5 V6 V7 V8 V9
 # [1,]  7  2  6  4  9  3  8  1  5
 # [2,]  3  1  5  7  2  8  9  4  6
