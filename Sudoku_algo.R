@@ -1,10 +1,11 @@
 # Sudoku algorithm
 
+## Create a function to check if a given 9x9 matrix solves a sudoku puzzle 
+
+
 ## Create function
 sudoku_test <- function(mat_1){
-  ## Current function assumes use inputs a standard 9x9 sudoku.
-  ## With a few alterations it would be possible to generalize to any
-  ## n x n sudoku where n = m^2
+  ## Current function assumes user inputs a standard 9x9 sudoku.
   
   ## Create correct sequence
   seq_1 <- seq(1:nrow(mat_1))
